@@ -1,10 +1,12 @@
-let square = (number) => number * number;
+const { square, sum } = require('./math');
+const expect = require('./expect');
 
-let results = square(2);
+let result = square(2);
 let expected = 4;
 
-if (results === expected) {
-  console.log('Test passes.');
-} else {
-  throw new Error('Test failed.');
-}
+expect(result).toBe(expected);
+
+result = sum(2, 3);
+expected = 5;
+
+expect(result).toBe(expected);
