@@ -1,9 +1,8 @@
 const { square, sum } = require('./math');
-const { test, expect } = require('./utils');
 
 test('test fungsi kuadrat', async () => {
   let result = await square(2);
-  let expected = 4;
+  let expected = 2;
 
   expect(result).toBe(expected);
 });

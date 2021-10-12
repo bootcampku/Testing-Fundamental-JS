@@ -4,8 +4,11 @@
   "description": "Fundamental Testing di JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "node src/index.js"
+    "test": "jest"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.2.5"
+  }
 }
