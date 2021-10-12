@@ -1,0 +1,11 @@
+{
+  "name": "testing-fundamental",
+  "version": "1.0.0",
+  "description": "Fundamental Testing di JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
