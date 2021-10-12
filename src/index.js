@@ -1,5 +1,5 @@
 const { square, sum } = require('./math');
-const expect = require('./expect');
+const { test, expect } = require('./utils');
 
 test('test fungsi kuadrat', async () => {
   let result = await square(2);
@@ -14,13 +14,3 @@ test('test fungsi pertambahan', () => {
 
   expect(result).toBe(expected);
 });
-
-async function test(title, callback) {
-  try {
-    await callback();
-    console.log(`✅ ${title} berhasil. \n`);
-  } catch (err) {
-    console.error(`❌ ${title} gagal.`);
-    console.error(`${err.message} \n`);
-  }
-}
